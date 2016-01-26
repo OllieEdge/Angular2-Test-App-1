@@ -1,27 +1,13 @@
 import {Component} from 'angular2/core';
+import {ContactListComponent} from "./contacts/contact-list.component";
 
 @Component({
     selector: 'app',
     template: `
-
-        <h3 (click)="onSelect()" [class.clicked]="showDetail === true">
-            {{contact.firstName}} {{contact.lastName}}
-        </h3>
-        <input [(ngModel)]="contact.firstName" type="text">
-        <div *ngIf="showDetail === true">
-            Phone Number: {{contact.phone}}<br>
-            Email: {{contact.email}}
-        </div>
+        <contact-list></contact-list>
     `,
-    styleUrls: ["../src/css/app.css"]
+    directives: [ContactListComponent]
 })
 export class AppComponent {
 
-    public contact = {firstName:'Ollie', lastName:'Edgington', phone:'07583197423', email:'ollie_edgington@hotmail.co.uk'};
-
-    public showDetail = false;
-
-    onSelect(){
-        this.showDetail = true;
-    }
 }
