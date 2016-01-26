@@ -7,7 +7,7 @@ It is derived from the official Angular 2 Documentation which can be found [here
 Follow the following steps and you're good to go! Important: Typescript and npm has to be installed on your machine!
 1: Clone repo
 ```
-git clone https://github.com/mschwarzmueller/angular-2-beta-boilerplate.git
+git clone https://github.com/OllieEdge/Angular2-Test-App-1.git
 ```
 2: Install packages
 ```
